@@ -22,7 +22,7 @@ public class DAOUsuarioRepository {
 	
 	public ModelLogin gravarUsuario(ModelLogin objeto) throws Exception {
 		
-		if (objeto.isNovo()) {/*Grava um novo*/
+		if (objeto.isNovo()) {
 		
 		String sql = "INSERT INTO model_login(login, senha, nome, email)  VALUES (?, ?, ?, ?);";
 		PreparedStatement preparedSql = connection.prepareStatement(sql);
@@ -95,7 +95,7 @@ public class DAOUsuarioRepository {
 		
 		ResultSet resultado = statement.executeQuery();
 		
-		while (resultado.next()) { /*percorrer as linhas de resultado do SQL*/
+		while (resultado.next()) { 
 			
 			ModelLogin modelLogin = new ModelLogin();
 			

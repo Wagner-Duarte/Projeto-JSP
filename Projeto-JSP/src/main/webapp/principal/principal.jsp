@@ -38,7 +38,7 @@
                                     <!-- Page-body start -->
                                     <div class="page-body">
                                         <div class="row">
-                                              <h1>Conteudo das páginas do sistema</h1>
+                                              <h2>Sistema simples de cadastro de usuarios em jsp</h2>
                                         </div>
                                     </div>
                                     <!-- Page-body end -->

@@ -26,8 +26,7 @@ public class FilterAutenticao implements Filter {
     public FilterAutenticao() {
     }
 
-    /*Encerra os processo quando o servidor é parado*/
-    /*Mataria os processo de conexão com banco*/
+    
 	public void destroy() {
 		try {
 			connection.close();
@@ -36,11 +35,7 @@ public class FilterAutenticao implements Filter {
 		}
 	}
 
-	/*Intercepta as requisicoes e a as respostas no sistema*/
-	/*Tudo que fizer no sistema vai fazer por aqui*/
-	/*Validação de autenticao*/
-	/*Dar commit e rolback de transaçoes do banco*/
-	/*Validar e fazer redirecionamento de paginas*/
+
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) 
 			throws IOException, ServletException {
 	    try { 
@@ -49,11 +44,11 @@ public class FilterAutenticao implements Filter {
 			
 			String usuarioLogado = (String) session.getAttribute("usuario");
 			
-			String urlParaAutenticar = req.getServletPath();/*Url que está sendo acessada*/
+			String urlParaAutenticar = req.getServletPath();
 			
-			/*Validar se está logado senão redireciona para a tela de login*/
+			
 			if (usuarioLogado == null  && 
-					!urlParaAutenticar.equalsIgnoreCase("/principal/ServletLogin")) {/*Não está logado*/
+					!urlParaAutenticar.equalsIgnoreCase("/principal/ServletLogin")) {
 				
 				RequestDispatcher redireciona = request.getRequestDispatcher("/index.jsp?url=" + urlParaAutenticar);
 				request.setAttribute("msg", "Por favor realize o login!");
@@ -81,8 +76,7 @@ public class FilterAutenticao implements Filter {
 		}
 	}
 
-	/*Inicia os processo ou recursos quando o servidor sobre o projeto*/
-	// inicar a conexão com o banco
+	
 	public void init(FilterConfig fConfig) throws ServletException {
 		connection = SingleConnectionBanco.getConnection();
 	}

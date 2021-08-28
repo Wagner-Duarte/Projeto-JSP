@@ -82,7 +82,7 @@
                                                             
                                                             <button type="button" class="btn btn-primary waves-effect waves-light" onclick="limparForm();" >Novo</button>
 												            <button  class="btn btn-success waves-effect waves-light">Salvar</button>
-												            <button type="button"  class="btn btn-info waves-effect waves-light" onclick="criarDeleteComAjax();" >Excluir</button>
+												            <button type="button"  class="btn btn-danger waves-effect waves-light" onclick="criarDeleteComAjax();" >Excluir</button>
 												            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalUsuario">Pesquisar</button>
                                                         </form> 
                                                    

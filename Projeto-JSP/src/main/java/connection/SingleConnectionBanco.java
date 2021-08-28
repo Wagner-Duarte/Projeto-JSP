@@ -33,7 +33,7 @@ public class SingleConnectionBanco {
 				Class.forName("org.postgresql.Driver");
 				connection = DriverManager.getConnection(banco, user, senha);
 				connection.setAutoCommit(false);
-				// System.out.println("deu conexao ");
+				// System.out.println(" conexao ok");
 			}
 			
 		}catch (Exception e) {
