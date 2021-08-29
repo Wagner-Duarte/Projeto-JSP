@@ -15,39 +15,40 @@
         
             
             .msg {
-                position: absolute;
-                top: 10%;
-                left: 33%;
-                font-size: 15px;
-                color: #664d03;
-                background-color: #fff3cd;
-                border-color: #ffecb5;
+                
+            }
+            form{
+            	background: #B0C4DE;
+            }
+            .imgjsp{
+       			
+       			border-radius: 50px;
             }
         </style>
 
     </head>
 
-    <body>
+    <body >
 
 
 
 
 <div class="">
-	<img src="./assets/images/jsp.png" class="img-fluid img-thumbnail rounded mx-auto d-block" alt="...">
+	<img src="./assets/images/jsp.png" class="imgjsp img-fluid img-thumbnail  mx-auto d-block mt-5" height="250" width="250"  alt="...">
 	</div>
         <h5 class="text-center mt-5">Bem vindo ao projeto JSP</h5>
-
-        <div class="container ">
+s
+        <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-6 rounded mx-auto d-block">
                 <div class=" ">
-                    <form class="border border-5 " action="<%=request.getContextPath() %>/ServletLogin" method="post" class="row g-3 needs-validation" novalidate>
+                    <form  class="border border-2 rounded " action="<%=request.getContextPath() %>/ServletLogin" method="post" class="row g-3 needs-validation" novalidate>
 
                         <input type="hidden" value="<%= request.getParameter(" url ") %>" name="url">
 
-                        <div class="mb-3 fadeIn first  ">
-                            <label class="form-label" for="login">Login</label>
-                            <input class="form-control" id="login" name="login" type="text" required>
+                        <div class="mb-3 fadeIn first col-3 text-center  rounded mx-auto d-block mt-2">
+                            <label class="form-label text-center" for="login">Login:</label>
+                            <input class="form-control text-center " id="login" name="login" type="text" required>
                             <div class="invalid-feedback">
                                 Obrigatorio
                             </div>
@@ -56,8 +57,8 @@
                             </div>
                         </div>
 
-                        <div class="mb-3">
-                            <label class="form-label" for="senha">Senha</label>
+                        <div class="mb-3 col-3 text-center rounded mx-auto d-block">
+                            <label class="form-label" for="senha">Senha:</label>
                             <input class="form-control" id="senha" name="senha" type="password" required>
                             <div class="invalid-feedback">
                                 Obrigatorio
@@ -67,7 +68,7 @@
                             </div>
                         </div>
 
-                        <input type="submit" value="Acessar" class="btn btn-primary">
+                        <input type="submit" value="Acessar" class="rounded mx-auto d-block btn btn-primary">
 
                     </form>
                     </div>
@@ -75,7 +76,8 @@
             </div>
         </div>
 
-        <h5 class="msg">${msg}</h5>
+        <h5 class="msg text-center text-danger mt-5">${msg}</h5>
+        
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

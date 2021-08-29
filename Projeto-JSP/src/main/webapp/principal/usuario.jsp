@@ -90,8 +90,9 @@
                                                 </div>
                                                 </div>
                                                 </div>
-                                                <span id="msg">${msg}</span>
-
+                                                <div class="text-danger m-2">
+                                                <span  id="msg ">${msg}</span>
+												</div>
 										<div style="height: 300px; overflow: scroll;">
 											<table class="table" id="tabelaresultadosview">
 												<thead>
@@ -99,6 +100,7 @@
 														<th scope="col">ID</th>
 														<th scope="col">Nome</th>
 														<th scope="col">Ver</th>
+														
 													</tr>
 												</thead>
 												<tbody>
@@ -107,6 +109,7 @@
 													       <td><c:out value="${ml.id}"></c:out></td>
 													       <td><c:out value="${ml.nome}"></c:out></td>
 													       <td><a class="btn btn-success" href="<%= request.getContextPath() %>/ServletUsuarioController?acao=buscarEditar&id=${ml.id}" >Ver</a></td>
+													       
 													      </tr>
 													</c:forEach>
 												</tbody>

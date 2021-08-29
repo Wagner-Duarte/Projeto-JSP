@@ -14,7 +14,7 @@
                           </div>
                       </div>
                      
-                          <img class="img-fluid" src="<%= request.getContextPath() %>/assets/images/logo.png" alt="Theme-Logo" />
+                          <img class="img-fluid" src="<%= request.getContextPath() %>/assets/images/jsp.png" width="40px" height="40px" alt="Theme-Logo" />
                       </a>
                       
                   </div>

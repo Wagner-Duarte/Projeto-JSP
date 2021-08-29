@@ -37,9 +37,12 @@
                                 <div class="page-wrapper">
                                     <!-- Page-body start -->
                                     <div class="page-body">
-                                        <div class="row">
-                                              <h2>Sistema simples de cadastro de usuarios em jsp</h2>
+                                        <div class="row rounded mx-auto d-block">
+                                              <h2 class=" text-primary text-center">Dashboard pagina inicial ao abrir a aplicação</h2>
                                         </div>
+                                        	<p class="mt-5 ml-5 ">Esta aplicação tem como proposta mostar um simples aplicação em JSF.</p>
+                                        	<p class="ml-5">Você pode criar, editar e exluir usuarios atraves do sub menu Usuarios dentro de Opções na barra ao lado</p>
+                                            <p class="mt-5 ml-5">Muito obrigado</p>
                                     </div>
                                     <!-- Page-body end -->
                                 </div>
