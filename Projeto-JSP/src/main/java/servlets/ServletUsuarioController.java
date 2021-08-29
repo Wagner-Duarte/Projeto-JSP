@@ -76,7 +76,7 @@ public class ServletUsuarioController extends HttpServlet {
 			     List<ModelLogin> modelLogins = daoUsuarioRepository.consultaUsuarioList();
 			     request.setAttribute("modelLogins", modelLogins);
 			     
-			    request.setAttribute("msg", "Usu·rio em ediÁ„o");
+			    request.setAttribute("msg", "Usu√°rio em edi√ß√£o");
 				request.setAttribute("modolLogin", modelLogin);
 				request.getRequestDispatcher("principal/usuario.jsp").forward(request, response);
 		 }
@@ -85,7 +85,7 @@ public class ServletUsuarioController extends HttpServlet {
 			 
 			 List<ModelLogin> modelLogins = daoUsuarioRepository.consultaUsuarioList();
 			 
-			 request.setAttribute("msg", "Usu·rios carregados");
+			 request.setAttribute("msg", "Usu√°rios carregados");
 		     request.setAttribute("modelLogins", modelLogins);
 			 request.getRequestDispatcher("principal/usuario.jsp").forward(request, response);
 			 
@@ -113,7 +113,7 @@ public class ServletUsuarioController extends HttpServlet {
 		
 		try {
 			
-		String msg = "OperaÁ„o realizada com sucesso!";	
+		String msg = "Opera√ß√£o realizada com sucesso!";	
 		
 		String id = request.getParameter("id");
 		String nome = request.getParameter("nome");
@@ -131,7 +131,7 @@ public class ServletUsuarioController extends HttpServlet {
 		
 		
 		if (daoUsuarioRepository.validarLogin(modelLogin.getLogin()) && modelLogin.getId() == null) {
-			msg = "J· existe usu·rio com o mesmo login, informe outro login;";
+			msg = "J√° existe usu√°rio com o mesmo login, informe outro login;";
 		}else {
 			if (modelLogin.isNovo()) {
 				msg = "Gravado com sucesso!";

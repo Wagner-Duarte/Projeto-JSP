@@ -16,7 +16,7 @@ import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
-@WebFilter(urlPatterns = {"/principal/*"})/*Interceptas todas as requisiÁoes que vierem do projeto ou mapeamento*/
+@WebFilter(urlPatterns = {"/principal/*"})/*Interceptas todas as requisi√ß√µes que vierem do projeto ou mapeamento*/
 public class FilterAutenticao implements Filter {
 	
 	
@@ -53,13 +53,13 @@ public class FilterAutenticao implements Filter {
 				RequestDispatcher redireciona = request.getRequestDispatcher("/index.jsp?url=" + urlParaAutenticar);
 				request.setAttribute("msg", "Por favor realize o login!");
 				redireciona.forward(request, response);
-				return; /*Para a execuÁ„o e redireciona para o login*/
+				return; /*Para a execu√ß√£o e redireciona para o login*/
 				
 			}else {
 				chain.doFilter(request, response);
 			}
 			
-			connection.commit();/*Deu tudo certo, ent„o comita as alteracoes no banco de dados*/
+			connection.commit();/*Deu tudo certo, ent√£o comita as alteracoes no banco de dados*/
 		
 	    }catch (Exception e) {
 			e.printStackTrace();

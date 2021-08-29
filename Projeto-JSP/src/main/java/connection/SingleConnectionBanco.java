@@ -38,7 +38,7 @@ public class SingleConnectionBanco {
 			
 		}catch (Exception e) {
 			
-			e.printStackTrace(); // mostar qualquer erro na conexão.
+			e.printStackTrace(); // mostar qualquer erro na conexao
 		}
 	}
 

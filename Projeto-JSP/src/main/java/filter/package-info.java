@@ -4,6 +4,6 @@
 /**
  * @author Wagner Duarte
  *
- *Pacote filter responsavel por interceptar todas  as requisiçoes feitas a aplicação
+ *Pacote filter responsavel por interceptar todas  as requisiÃ§Ãµes feitas a aplicaÃ§Ã£o
  */
 package filter;
