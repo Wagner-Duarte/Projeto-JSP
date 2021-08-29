@@ -38,5 +38,13 @@ Para alcançar este visual foi utilizado template em HTML e Bootstrap provando m
 O intuito deste projeto foi para aprendizado e demonstração do uso de JSP
 
 
+## Tools
+Java 8
 
+PostgreSQL (to de database)
 
+Maven
+
+JSTL
+
+JSF
